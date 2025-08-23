@@ -1,0 +1,89 @@
+/* ========================================================================== */
+/* Sección de formulario de reservación                                       */
+/* Incluye estilos para inputs, labels, botones y checkbox                    */
+/* ========================================================================== */
+.form {
+  max-width: 385px; /* ancho fijo del formulario */
+}
+
+/* Agrupación de inputs sin bordes extras */
+.form__fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Etiquetas de los inputs */
+.form__lable {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Campos de entrada */
+.form__input {
+  border-radius: 4px;
+  margin: 0 0 32px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: inherit;
+  border-color: #838383;
+}
+
+/* Color del placeholder */
+.form__input::placeholder {
+  color: #838383;
+}
+
+/* Botón principal */
+.form__button {
+  max-width: 385px;
+  padding: 0 100px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  box-sizing: border-box;
+  background-color: #2f80ed;
+  color: #fff;
+}
+
+/* Estado hover del botón */
+.form__button:hover {
+  opacity: 0.7;
+}
+
+/* Fieldset con elementos centrados */
+.form__fieldset_el_center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Label alineado a la derecha de un input */
+.form__lable_direction_right {
+  display: inline;
+  margin-left: 12px;
+}
+
+/* Estilo para checkbox */
+.form__checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ⚠️ Nota:
+   El brief pide anchos y paddings fijos (ej. 385px para el formulario).
+   Esto limita la adaptabilidad en pantallas pequeñas.
+   Una opción mejor sería usar `max-width: 90%` o media queries para hacerlo
+   totalmente responsive. */

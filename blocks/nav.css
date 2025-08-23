@@ -1,0 +1,51 @@
+/* ╔══════════════════════════════════════════════════════════════════════╗
+   ║  blocks/nav.css — Barra de navegación principal                       ║
+   ╚══════════════════════════════════════════════════════════════════════╝ */
+
+/* ── Contenedor principal de la navegación ───────────────────────────── */
+.nav {
+  display: flex; /* alinea logo y enlaces en fila */
+  justify-content: space-between; /* separa extremos: logo a la izq, links a la der */
+}
+
+/* ── Logo de la cafetería ────────────────────────────────────────────── */
+.nav__logo {
+  display: flex;
+  position: relative;
+  left: 30px; /* desplazamiento desde borde izq */
+  top: 30px; /* desplazamiento desde borde sup */
+  margin-bottom: 183px; /* crea espacio inferior (bajo el header) */
+  height: 39px;
+  width: 105px;
+}
+
+/* ── Lista de enlaces de navegación ─────────────────────────────────── */
+.nav__links {
+  display: flex;
+  margin-right: 80px; /* espacio derecho del bloque nav */
+  margin-top: 30px; /* alinea con el logo */
+  column-gap: 20px; /* espacio entre los <li> */
+  list-style-type: none; /* elimina viñetas */
+}
+
+/* ── Estilos de cada enlace ─────────────────────────────────────────── */
+.nav__link {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none; /* elimina subrayado */
+  transition: opacity 0.2s ease; /* efecto suave en hover */
+}
+
+.nav__link:hover {
+  opacity: 0.7; /* feedback visual al pasar el mouse */
+}
+
+/* ⚠️ Nota:
+   Los offsets (left/top/margins) están pensados para 1440px. En un layout
+   responsivo convendría espaciar con padding del contenedor y usar `gap`
+   consistente; además, añadir `:focus-visible` a enlaces para mejor accesibilidad.
+   Se deja tal cual por el brief. */

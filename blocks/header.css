@@ -1,0 +1,112 @@
+/* ╔══════════════════════════════════════════════════════════════════════╗
+   ║  blocks/header.css — Encabezado (hero)                               ║
+   ╚══════════════════════════════════════════════════════════════════════╝ */
+
+/* ── Contenedor principal del header (hero section) ───────────────────── */
+.header {
+  display: flex; /* layout flexible en columna */
+  flex-direction: column;
+  position: relative;
+  height: 100vh; /* ocupa toda la altura visible */
+  min-height: 720px; /* límite inferior (pantallas pequeñas) */
+  max-height: 800px; /* límite superior */
+  background-image: url(../images/background_header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* imagen escalada al contenedor */
+}
+
+/* ── Título principal del sitio ───────────────────────────────────────── */
+.header__title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  max-width: 709px; /* límite de ancho para mantener legibilidad */
+  left: 80px; /* alineación horizontal */
+}
+
+/* ── Texto destacado en cursiva (azul) ────────────────────────────────── */
+.header__span-accent {
+  display: flex;
+  font-family: "Noto Serif", Times, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed; /* color azul de acento */
+  left: 80px;
+}
+
+/* ── Descripción debajo del título ───────────────────────────────────── */
+.header__description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Noto Serif", Times, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 683px;
+  margin-top: 28px;
+  left: 80px;
+}
+
+/* ── Imagen ilustrativa del header (hero image) ───────────────────────── */
+.header__image {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 646px;
+  height: 568px;
+  top: 124px;
+  right: 5px;
+  object-fit: cover; /* asegura que no se deforme */
+}
+
+/* ── Footer interno del header (horarios y dirección) ────────────────── */
+.header__footer {
+  color: #6f6f6f; /* color general de texto */
+}
+
+/* Bloque de horarios dentro del footer */
+.header__timetable {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
+}
+
+/* Texto de los párrafos del footer */
+.header__paragraph {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  margin: 0;
+}
+
+/* Bloque de dirección en el footer */
+.header__address {
+  display: flex;
+  margin-top: auto;
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
+}
+
+/* ⚠️ Nota:
+   La combinación `height: 100vh` con `min/max-height` está ajustada para 1440px.
+   En responsive podría usarse `min()`/`max()` o `clamp()` y evitar offsets absolutos
+   (top/right/left) a favor de grid/padding del contenedor. También conviene añadir
+   `@media (prefers-reduced-motion)` si hubiera animaciones. Se mantiene estático
+   para cumplir el brief. */

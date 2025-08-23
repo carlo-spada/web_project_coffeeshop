@@ -1,0 +1,22 @@
+/* ╔══════════════════════════════════════════════════════════════════════╗
+   ║  blocks/page.css — Layout general de la página                        ║
+   ╚══════════════════════════════════════════════════════════════════════╝ */
+
+/* Elemento raíz que limita el ancho del contenido y aplica estilos base */
+.page {
+  max-width: 1600px; /* límite máximo del layout en pantallas grandes */
+  min-width: 1100px; /* evita layouts demasiado estrechos */
+  margin: auto; /* centra el bloque en la ventana */
+
+  /* Tipografía principal */
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px; /* tamaño base de texto */
+  line-height: 20px; /* altura de línea base */
+  color: #000; /* color de texto predeterminado */
+}
+
+/* ⚠️ Nota:
+   Este contenedor usa min/max-width fijos. Para hacerlo más flexible se podría
+   usar `max-width: clamp(320px, 90vw, 1440px)` y padding lateral con `clamp()`
+   o una clase `.container` (p.ej. padding 0 80px en desktop y menor en móviles).
+   Se mantiene fijo aquí para cumplir el brief de 1440px. */

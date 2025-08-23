@@ -1,0 +1,80 @@
+/* ╔══════════════════════════════════════════════════════════════════════╗
+   ║  blocks/recipes.css — Sección de recetas (videos YouTube)             ║
+   ╚══════════════════════════════════════════════════════════════════════╝ */
+
+/* ── Contenedor principal de la sección ──────────────────────────────── */
+.recipes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/background_recipes.svg);
+  background-color: #0a2750; /* fallback sólido detrás del SVG */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* texto en blanco para contraste */
+}
+
+/* ── Título de sección ───────────────────────────────────────────────── */
+.recipes__title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  max-width: 580px;
+  padding-top: 100px; /* separación desde el borde sup */
+  margin-left: 80px; /* sangría para alinear con grid */
+}
+
+/* ── Subtítulo (descripción introductoria) ───────────────────────────── */
+.recipes__subtitle {
+  font-family: "Noto Serif", Times, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 80px;
+  padding-top: 24px;
+  max-width: 438px;
+}
+
+/* ── Contenedor de los videos ────────────────────────────────────────── */
+.recipes__videos {
+  display: flex;
+  width: 1000px; /* ancho fijo como en brief */
+  height: 273px; /* altura calculada para 16:9 */
+  margin: 80px auto 215px; /* centrado horizontal */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Cada item de video (iframe + caption) ───────────────────────────── */
+.recipes__video-item {
+  display: flex;
+  width: 100%;
+  border: 0;
+  justify-content: space-between;
+  column-gap: 40px; /* espacio entre iframes */
+}
+
+/* ── El propio iframe (video incrustado) ─────────────────────────────── */
+.recipes__iframe {
+  width: 450px;
+  height: 200px;
+  border: 0; /* elimina borde por defecto */
+}
+
+/* ── Pie de video (descripción corta + duración) ─────────────────────── */
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* centra verticalmente texto */
+  height: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 24px; /* separación del iframe */
+}
+
+/* ⚠️ Nota:
+   El brief exige muchos tamaños fijos, entre ellos los de los iframes (450x200px),
+   lo cual es estático. Una opción mejor sería un contenedor responsivo con
+   aspect-ratio (ej. 16:9) para que los videos se adapten al ancho disponible.
+   Se mantiene fijo aquí solo para cumplir el brief. */
