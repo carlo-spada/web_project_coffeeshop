@@ -61,6 +61,7 @@ El proyecto se divide en **4 etapas**, cada una enfocada en aprender y aplicar n
 
 ## 📂 Estructura del proyecto (inicial)
 
+```
 web_project_coffeeshop/
 │
 ├── images/ # Recursos gráficos (logos, fondos, íconos)
@@ -76,6 +77,7 @@ web_project_coffeeshop/
 ├── .gitignore # Archivos/carpetas ignorados por Git
 ├── .prettierignore # Exclusiones de Prettier
 └── README.md # Documentación del proyecto
+```
 
 ---
 
