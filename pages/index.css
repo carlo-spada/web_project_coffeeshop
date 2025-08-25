@@ -10,7 +10,7 @@
 /* ── Layout general de la página ──────────────────────────────────────── */
 @import url("../blocks/page.css"); /* Tipografía base, límites, colores */
 
-/* ── Encabezado (hero) ────────────────────────────────────────────────── */
+/* ── Encabezado  ––––––────────────────────────────────────────────────── */
 @import url("../blocks/header.css"); /* Título, descripción, imagen, footer */
 
 /* ── Navegación superior ──────────────────────────────────────────────── */
