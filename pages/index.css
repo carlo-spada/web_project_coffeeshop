@@ -5,25 +5,25 @@
    ╚══════════════════════════════════════════════════════════════════════╝ */
 
 /* ── Base del navegador (reset/normalización) ─────────────────────────── */
-@import url("../vendor/normalize.css");
+@import url(../vendor/normalize.css);
 
 /* ── Layout general de la página ──────────────────────────────────────── */
-@import url("../blocks/page.css"); /* Tipografía base, límites, colores */
+@import url(../blocks/page.css); /* Tipografía base, límites, colores */
 
 /* ── Encabezado  ––––––────────────────────────────────────────────────── */
-@import url("../blocks/header.css"); /* Título, descripción, imagen, footer */
+@import url(../blocks/header.css); /* Título, descripción, imagen, footer */
 
 /* ── Navegación superior ──────────────────────────────────────────────── */
-@import url("../blocks/nav.css"); /* Logo, enlaces, spacing, estados */
+@import url(../blocks/nav.css); /* Logo, enlaces, spacing, estados */
 
 /* ── Sección: Recetas (YouTube) ───────────────────────────────────────── */
-@import url("../blocks/recipes.css"); /* Grid/videos, captions, contenedores */
+@import url(../blocks/recipes.css); /* Grid/videos, captions, contenedores */
 
 /* ── Sección: Reservaciones (layout envolvente) ───────────────────────── */
-@import url("../blocks/reservation.css"); /* Fondo, padding, título sección */
+@import url(../blocks/reservation.css); /* Fondo, padding, título sección */
 
 /* ── Formulario (inputs/labels/estados) ───────────────────────────────── */
-@import url("../blocks/form.css"); /* :focus, :checked, botones, helpers */
+@import url(../blocks/form.css); /* :focus, :checked, botones, helpers */
 
 /* ── Pie de página ────────────────────────────────────────────────────── */
-@import url("../blocks/footer.css"); /* Logo claro, redes, copyright */
+@import url(../blocks/footer.css); /* Logo claro, redes, copyright */
