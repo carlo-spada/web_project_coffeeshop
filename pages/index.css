@@ -6,3 +6,6 @@
 
 /* ── Base del navegador (reset/normalización) ─────────────────────────── */
 @import url(../vendor/normalize.css);
+
+/* ── Layout general de la página ──────────────────────────────────────── */
+@import url(../blocks/page.css); /* Tipografía base, límites, colores */
