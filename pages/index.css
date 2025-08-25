@@ -10,11 +10,11 @@
 /* ── Layout general de la página ──────────────────────────────────────── */
 @import url("../blocks/page.css"); /* Tipografía base, límites, colores */
 
-/* ── Navegación superior ──────────────────────────────────────────────── */
-@import url("../blocks/nav.css"); /* Logo, enlaces, spacing, estados */
-
 /* ── Encabezado (hero) ────────────────────────────────────────────────── */
 @import url("../blocks/header.css"); /* Título, descripción, imagen, footer */
+
+/* ── Navegación superior ──────────────────────────────────────────────── */
+@import url("../blocks/nav.css"); /* Logo, enlaces, spacing, estados */
 
 /* ── Sección: Recetas (YouTube) ───────────────────────────────────────── */
 @import url("../blocks/recipes.css"); /* Grid/videos, captions, contenedores */
